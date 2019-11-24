@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			*{
+			margin:0px;
+			padding:0px;
+			}
+			html,body{
+			position:relative;
+			}
+			.div{
+				display:block;
+			}
+			.container{
+				position: relative;
+				padding: 50px;
+				height: 780px;
+				background:url(images/loginbgbg.png) no-repeat bottom center;
+				background-size: 100% 100%;
+			}
+			.logo{
+				padding: 0px 0 0 10px;
+			}
+			.logo p{
+				font-size: 26px;
+				color: #ffffff;
+				display: inline-block;
+				vertical-align:top;
+				margin-left: 30px;
+				line-height: 48px;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+			.login-sec{
+				width: 395px;
+				margin: 0 10% 0 0;
+				float:right;
+			}
+			.login-tit{
+				font-size: 30px;
+				color: #ffffff;
+				text-align: center;
+				padding: 20px 0 30px;
+				line-height: 1em;
+				margin: 0;
+			}
+			
+			.login-form{
+				background: rgba(255,255,255,0.9);
+				border: 1px solid #fff;
+				box-shadow: 0 0 2px 4px
+					rgba(128,128,128,0.2);
+				padding: 40px;
+				border-radius: 5px;
+			}
+			.form-group{
+				margin-bottom:15px;
+			}
+			.login-form,.input-group{
+				padding:5px;
+				margin-bottom:0px;
+				border-bottom:1px dashed #e4e4e4;
+			}
+			.login-form .input-group input {
+    border: none;
+    background-color: none;
+    box-shadow: none;
+    font-size: 15px;
+    color: #333333;
+}
+		.input-group{
+			border-collapse:separate;
+			position:relative;
+			display:table;
+			height:43px;
+			width:100%;
+		}
+		[type="text"],[type="password"]{
+			width:320px;
+			height:38px;
+			border:1px solid #ccc;
+			margin-top:0;
+			font-size:16px;
+			text-indent:50px;
+		}
+		.login-form1 {				padding:5px;
+				margin-bottom:0px;
+				border-bottom:1px dashed #e4e4e4;
+}
+.sxx{
+	width:75px;
+	display:inline-block;
+}
+.img{
+	margin-top:50px;
+}
+		.login-btn{
+			padding-top:10px;
+		}
+		input[type=submit] {
+    width: 100%;
+		}
+		.login-btn .btn {
+    height: 38px;
+    background: #319aec;
+    border: none;
+    font-size: 16px;
+	color:#FFF;
+}
+.login-btn .login-tag a {
+    color: #666666;
+}
+a:link, a:visited {
+    color: #434343;
+    text-decoration: none;
+}
+a, a:link {
+    text-decoration: none;
+    color: #696171;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+a:hover{
+	color:#319aec;
+	text-decoration:underline;
+}
+input{
+	
+}
+        </style>
+		
+	</head>
+	<body>
+		<div class="container" style="height:520px">
+			<div class="logo">
+				<img src="images/logo_school.png" alt="学校logo">
+				<p>教务管理系统</p>
+			</div>
+			<div class="login-sec">
+				<h2 class="login-tit">用户登录</h2>
+				<div class="login-form">
+					
+                    <form name="form1" metho="post" action="./default2.aspx" id="form1" role="form">
+                    
+                    	<div class="form-group">
+                        
+                        	<div class="input-group">
+                        	<img src="images/1.png" height="44">
+                        	<input type="text" name="user" class="user" placeholder="用户名">
+                        	</div>
+                            
+                        	<div class="input-group">
+                            <img src="images/2.png" height="45">
+                            <input type="password" name="password" class="password" placeholder="密码">
+                        	</div>
+                            
+                            <div class="input-group">
+                            <img src="images/3.png" width="46" height="43">
+                            <input type="text" name="secretcode" class="secretcode" placeholder="验证码">
+                            <img src="images/CheckCode.aspx" title="看不清，换一张" alt="看不清，换一张" style="float:right"></div>
+                            
+                            <div class="jsxx">
+                            <div class="sxx">
+                            <input type="radio" id="botton1" name="botton1" value="部门" >
+                            <label foor="botton1">部门</label>
+                            </div>
+                            
+                            <div class="sxx">
+                            <input type="radio" id="botton2" name="botton2" value="教师" >
+                            <label for="botton2">教师</label>
+                            </div>
+                            
+                            <div class="sxx">
+                            <input type="radio" id="botton3" name="botton3" value="学生" >
+                            <label for="botton1">学生</label>
+                            </div>
+                            
+                            <div class="sxx">
+                            <input type="radio" id="botton1" name="botton1" value="访客" >
+                            <label for="botton1">访客</label>
+                            </div>
+                          </div>
+                   		</div>
+                        
+                        <div class="login-btn">
+                        	<input type="submit" name="botton" value="登录" id="botton" class="btn">
+                            <div class="login-tag"><a href="#" id="linkforget" >忘记密码</a></div> 
+                        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
